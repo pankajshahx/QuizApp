@@ -16,9 +16,13 @@ function Mainmenu() {
     return (
         <div className="Menu">
             <h3 className="fullname">Full Name</h3>
-            <input className="user" type="text" value={user} onChange={handleChange} style = {{required:'true'}} />
+            <input className="user" type="text" value={user} onChange={handleChange}  />
             <button style={{backgroundColor:'lightgreen'}} onClick={()=>{
-                setquizState("quiz");
+                if(user==""){
+                    alert("Please enter your name");
+                }else{
+                    setquizState("quiz");
+                }
             }}>Start Quiz</button>
         </div>
     )

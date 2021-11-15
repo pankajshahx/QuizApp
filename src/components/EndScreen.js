@@ -20,7 +20,7 @@ function EndScreen() {
         <div className="endScreen">
             <h1>Quiz Finished</h1>
             <h2 className="username">{user}! Your Total Score is</h2>
-            <h1>{Questions.length}/{score}</h1>
+            <h1>{score}/{Questions.length}</h1>
             <button style={{backgroundColor:'lightgreen'}} onClick={restartQuiz}>Restart Quiz</button>
         </div>
     )

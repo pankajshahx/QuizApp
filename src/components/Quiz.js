@@ -21,7 +21,9 @@ function Quiz() {
         setColor4("white");
         if(Questions[currQues].answer == optionChosen){
             setScore(score+1);
+            setOptionChosen("");
         }
+        //console.log(optionChosen);
         setCurrQues(currQues+1);
     };
 
@@ -36,6 +38,8 @@ function Quiz() {
 
     const funcA = () =>{
         setOptionChosen("A");
+
+        
         
         setColor1("aqua");
         setColor2("white");
@@ -60,7 +64,7 @@ function Quiz() {
     }
     const funcD = () =>{
         setOptionChosen("D");
-        
+
         setColor1("white");
         setColor2("white");
         setColor3("white");
